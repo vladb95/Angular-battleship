@@ -1,10 +1,11 @@
 html
   head
     title Battleship
-    link(href="/bundle/bundle.requirences.css")
-  body(ng-app="battle-ship-app")
+    link(href="bundle/bundle.requirences.css", rel="stylesheet")
+  body(ng-app="battle-ship-app", ng-controller="MainPageController as mc")
     .container
       .row
         .col-md-12
+          button(ng-click="mc.testFunction()", type="button").btn.btn-primary Test
 script(src="bundle/bundle.requirences.js")
 script(src="bundle/bundle.application.js")

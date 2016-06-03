@@ -2,7 +2,13 @@
 
 module Application.Controllers {
   export class MainPageController{
+
     constructor($scope: ng.IScope){
+      console.log("test");
+    }
+
+    testFunction(){
+      console.log("test 2");
     }
   }
 }
