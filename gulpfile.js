@@ -54,7 +54,7 @@ gulp.task('typescript-build', function(){
     .pipe(gulp.dest('bundle'));
 });
 
-gulp.task('default', ['css-build', 'jade-templates-build', 'jade-index-build']);
+gulp.task('default', ['css-build', 'jade-templates-build', 'jade-index-build', 'build-requirences', 'typescript-build']);
 
 gulp.task('watch', function(){
   gulp.watch('./app/*.ts', ['typescript-build']);
