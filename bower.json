@@ -1,0 +1,26 @@
+{
+  "name": "angular-battleship",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "#482"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "battleship",
+    "game",
+    "battle"
+  ],
+  "homepage": "https://github.com/vladb95/Angular-battleship",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
