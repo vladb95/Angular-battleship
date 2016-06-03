@@ -3,3 +3,4 @@ bower_components/
 bundle/
 !templates/jade/*
 templates/
+index.html
