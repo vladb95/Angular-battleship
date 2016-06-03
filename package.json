@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "definitely-typed-angular": "^1.0.1",
+    "definitely-typed-jquery": "^1.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-concat-css": "^2.3.0",
