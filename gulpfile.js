@@ -6,7 +6,7 @@ var gulp                = require('gulp'),
 
 var requirences = {
   js:  [
-    './bower_components/angular.min.js',
+    './bower_components/angular/angular.min.js',
     './bower_components/jquery/dist/jquery.min.js'
   ],
   css: [
