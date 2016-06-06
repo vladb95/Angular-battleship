@@ -7,6 +7,7 @@ var gulp                = require('gulp'),
 var requirences = {
   js:  [
     './bower_components/angular/angular.min.js',
+    './bower_components/angular-ui-router/release/angular-ui-router.min.js',
     './bower_components/jquery/dist/jquery.min.js',
     './bower_components/bootstrap/dist/js/bootstrap.min.js'
   ],
@@ -55,9 +56,16 @@ gulp.task('typescript-build', function(){
     .pipe(gulp.dest('bundle'));
 });
 
+gulp.task('server-typescript-build', function(){
+  gulp.src('server/*.ts')
+    .pipe(typeScriptCompiler())
+    .pipe(gulp.dest('server'));
+});
+
 gulp.task('default', ['css-build', 'jade-templates-build', 'jade-index-build', 'build-requirences', 'typescript-build']);
 
 gulp.task('watch', function(){
   gulp.watch('./app/*.ts', ['typescript-build']);
   gulp.watch('./templates/jade/*.jade', ['jade-index-build', 'jade-templates-build']);
+  gulp.watch('./server/*.ts', ['server-typescript-build']);
 });

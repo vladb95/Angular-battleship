@@ -1,14 +1,15 @@
-/// <reference path="../node_modules/definitely-typed-angular/angular.d.ts" />
+/// <reference path="../typings/tsd.d.ts" />
 
 module Application.Controllers {
   export class MainPageController{
-
+    data:       any;
+    friendLink: string;
     constructor($scope: ng.IScope){
-      console.log("test");
+      this.friendLink = "test link";
     }
 
-    testFunction(){
-      console.log("test 2");
+    getRandomPlayer(){
+      alert('Random');
     }
   }
 }

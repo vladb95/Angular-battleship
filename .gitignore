@@ -4,3 +4,4 @@ bundle/
 !templates/jade/*
 templates/
 index.html
+typings/
