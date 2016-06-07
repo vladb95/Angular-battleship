@@ -32,7 +32,7 @@ gulp.task('css-build', function(){
 });
 
 gulp.task('jade-templates-build', function(){
-  gulp.src(['./templates/jade/*.jade', '!/templates/jade/index.jade'])
+  gulp.src(['./templates/jade/*.jade', '!./templates/jade/index.jade'])
       .pipe(jade({
         clients: true,
         pretty:  true
