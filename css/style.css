@@ -1,3 +1,51 @@
 .button-paly{
   display: block;
+  padding: 17px 75px;
+  margin: 150px auto 0;
+  border: none;
+  background-color: #8093D8;
+  color: #fff;
+  transition: all .5s ease;
+  border-radius: 3px;
+  font-size: 18px;
+}
+.button-paly:hover{
+  background-color: #7085CD;
+}
+.block-p{
+  margin: 50px 0;
+  font-size: 24px;
+  line-height: 70px;
+}
+.input-link{
+  display: block;
+  padding: 5px 15px;
+  margin: 0 auto;
+  width: 342px;
+  border: 1px solid #8093D8;
+  transition: all .5s ease;
+}
+.input-link:active{
+  border: 1px solid #7085CD;
+}
+
+
+/**/
+
+.wrap-field{
+  margin: 45px auto;
+}
+.wrap-field span:first-child{
+  border-left: 1px solid #000;
+}
+.filed-item:last-child span{
+  border-bottom: 1px solid #000;
+}
+.wrap-field span{
+  width: 10%;
+  height: 55.5px;
+  border: 1px solid #000;
+  float: left;
+  border-left: none;
+  border-bottom: none;
 }
