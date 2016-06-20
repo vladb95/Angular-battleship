@@ -6,61 +6,11 @@
       .row
         .col-md-6
           .wrap-field.clearfix
-            .filed-item
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-            .filed-item
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-            .filed-item
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-            .filed-item
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-            .filed-item
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
-              span
+            -for(var i=0;i < 10;i++)
+              .filed-item
+                -for(var j = 0;j < 10; j++)
+                  span
+            
         .col-md-6
           h4 Ships
           ul
