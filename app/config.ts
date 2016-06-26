@@ -2,21 +2,17 @@
 
 module Application.Config{
   export class RouteConfig{
-    constructor($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider){
-
-      $stateProvider
-        .state('index', {
-          url: "/",
+    constructor($routeProvider){
+      $routeProvider
+        .when('/', {
           templateUrl: "templates/main.html",
           controller: "MainPageController",
           controllerAs: "vm"
         })
-        .state('index.constructor', {
-          url: '/constructor',
+        .when('/constructor', {
           templateUrl: "templates/constructor.html",
-        });
-        $urlRouterProvider
-          .otherwise('/');
+        })
+        .otherwise('/');
     }
   }
 }
