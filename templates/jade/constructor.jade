@@ -5,7 +5,7 @@
           h3.text-center friend's status
       .row
         .col-md-6
-          .wrap-field.clearfix
+          .wrap-field.clearfix(ng-drop="true", ng-drop-success="vm.dropShip($data,$event)")
             -for(var i=0;i < 10;i++)
               .filed-item
                 -for(var j = 0;j < 10; j++)
@@ -16,7 +16,11 @@
           ul
             li Item 1
               ul
-                li Sub-item 1-1
+                li
+                  .wrap-field.clearfix
+                    .filed-item(ng-drag="true")
+                      -for(var j = 0;j < 5; j++)
+                        span
                 li Sub-item 1-2
             li Item 2
               ul

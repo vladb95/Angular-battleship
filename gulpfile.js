@@ -13,7 +13,8 @@ var requirences = {
     './bower_components/angular-route/angular-route.min.js',
     './bower_components/jquery/dist/jquery.min.js',
     './bower_components/bootstrap/dist/js/bootstrap.min.js',
-    './bower_components/angular-socket-io/socket.min.js'
+    './bower_components/angular-socket-io/socket.min.js',
+    './bower_components/ngDraggable/ngDraggable.js'
   ],
   css: [
     './bower_components/bootstrap/dist/css/bootstrap.min.css'

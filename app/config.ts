@@ -11,6 +11,8 @@ module Application.Config{
         })
         .when('/constructor', {
           templateUrl: "templates/constructor.html",
+          controller: "ConstructorController",
+          controllerAs: "vm"
         })
         .otherwise('/');
     }

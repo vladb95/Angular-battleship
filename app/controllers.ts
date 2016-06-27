@@ -6,12 +6,14 @@ module Application.Controllers {
 
     friendLink: string;
 
-    constructor($scope: ng.IScope){
-      this.friendLink = "test link";
+    constructor(private _bsService, private _location){
+      this._bsService.getPersonalLinkToPlayWithFriend().then((data) => {
+        this.friendLink = data;
+      });
     }
 
     getRandomPlayer(){
-
+      this._location.path('/constructor');
     }
   }
 
@@ -19,6 +21,12 @@ module Application.Controllers {
 
     constructor() {
 
+    }
+
+    dropShip($data,$event){
+      console.log($data);
+      console.log($event);
+      alert('success');
     }
   }
 }
