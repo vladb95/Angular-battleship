@@ -1,4 +1,4 @@
-.button-paly{
+.button-play{
   display: block;
   padding: 17px 75px;
   margin: 150px auto 0;
@@ -31,21 +31,71 @@
 
 
 /**/
-
-.wrap-field{
-  margin: 45px auto;
+.friends-status{
+  margin-bottom: 50px;
 }
+.wrap-field{
+  /*margin: 45px auto;*/
+}
+.wrap-field-ships span:first-child{
+  border-left: 1px solid #806781;
+}
+
 .wrap-field span:first-child{
-  border-left: 1px solid #000;
+  border-left: 1px solid #806781;
 }
 .filed-item:last-child span{
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #806781;
 }
 .wrap-field span{
-  width: 10%;
-  height: 55.5px;
-  border: 1px solid #000;
+  width: 55px;
+  height: 55px;
+  border: 1px solid #806781;
   float: left;
   border-left: none;
   border-bottom: none;
+}
+.wrap-field-ships span{
+  width: 55px;
+  height: 55px;
+  border: 1px solid #806781;
+  float: left;
+  border-left: none;
+  border-bottom: none;
+}
+.block-ships h3{
+  margin: 0 0 25px 0;
+  padding: 0;
+  border-bottom: 1px solid #cccfe5;
+}
+.list-ship{
+  padding: 0;
+  margin: 0;
+}
+.list-ship > li > ul{
+  margin-top: 8px;
+}
+.list-ship li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+.list-ship .wrap-field-ships{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.play{
+  display: block;
+  padding: 17px 95px;
+  margin: 60px auto;
+  border: none;
+  background-color: #8093D8;
+  color: #fff;
+  transition: all .5s ease;
+  border-radius: 3px;
+  font-size: 18px;
+}
+.ships-type{
+  background-color: #cccfe5;
 }

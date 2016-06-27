@@ -2,7 +2,7 @@
       .row
         .col-md-12
           h2.text-center Constructor
-          h3.text-center friend's status
+          h3.text-center.friends-status Friend's status
       .row
         .col-md-6
           .wrap-field.clearfix(ng-drop="true", ng-drop-success="vm.dropShip($data,$event)")
@@ -12,20 +12,68 @@
                   span
             
         .col-md-6
-          h4 Ships
-          ul
-            li Item 1
-              ul
-                li
-                  .wrap-field.clearfix
-                    .filed-item(ng-drag="true")
-                      -for(var j = 0;j < 5; j++)
-                        span
-                li Sub-item 1-2
-            li Item 2
-              ul
-                li Sub-item 2-1
-                li Sub-item 2-2
-                li Sub-item 2-3
-            li Item 3
+          .block-ships
+            h3 Ships
+            ul(class="list-ship")
+              li 4-х палубный
+                ul
+                  li
+                    .wrap-field-ships.clearfix
+                      .filed-item(ng-drag="true")
+                        -for(var j = 0;j < 4; j++)
+                          span.ships-type
+                    
+              li 3-х палубный
+                ul
+                  li
+                    .wrap-field-ships.clearfix
+                      .filed-item(ng-drag="true")
+                        -for(var j = 0;j < 3; j++)
+                          span.ships-type
+                  li
+                    .wrap-field-ships.clearfix
+                      .filed-item(ng-drag="true")
+                        -for(var j = 0;j < 3; j++)
+                          span.ships-type
+              li 2-х палубный
+                ul
+                  li
+                    .wrap-field-ships.clearfix
+                      .filed-item(ng-drag="true")
+                        -for(var j = 0;j < 2; j++)
+                          span.ships-type
+                  li
+                    .wrap-field-ships.clearfix
+                      .filed-item(ng-drag="true")
+                        -for(var j = 0;j < 2; j++)
+                          span.ships-type
+                  li
+                    .wrap-field-ships.clearfix
+                      .filed-item(ng-drag="true")
+                        -for(var j = 0;j < 2; j++)
+                          span.ships-type
+              li 1-но палубный
+                ul
+                  li
+                    .wrap-field-ships.clearfix
+                      .filed-item(ng-drag="true")
+                        -for(var j = 0;j < 1; j++)
+                          span.ships-type
+                  li
+                    .wrap-field-ships.clearfix
+                      .filed-item(ng-drag="true")
+                        -for(var j = 0;j < 1; j++)
+                          span.ships-type
+                  li
+                    .wrap-field-ships.clearfix
+                      .filed-item(ng-drag="true")
+                        -for(var j = 0;j < 1; j++)
+                          span.ships-type
+                  li
+                    .wrap-field-ships.clearfix
+                      .filed-item(ng-drag="true")
+                        -for(var j = 0;j < 1; j++)
+                          span.ships-type
+      .row
+        .col.l12          
           button.play Play

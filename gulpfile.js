@@ -90,5 +90,6 @@ gulp.task('default', ['css-build', 'jade-templates-build', 'jade-index-build', '
 gulp.task('watch', function(){
   gulp.watch('./app/*.ts', ['typescript-build']);
   gulp.watch('./templates/jade/*.jade', ['jade-index-build', 'jade-templates-build']);
+  gulp.watch('./css/*.css', ['css-build']);
   gulp.watch('./server/*.ts', ['server-typescript-build']);
 });
